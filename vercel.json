@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "https://47.243.52.225:443/$1"
+      "destination": "http://47.243.52.225:80/$1"
     }
   ],
   "headers": [
@@ -10,7 +10,7 @@
       "source": "/(.*)",
       "headers": [
         {
-          "key": "Host",
+          "key": "X-Forwarded-Host",
           "value": "admin-test.css.sd"
         }
       ]
