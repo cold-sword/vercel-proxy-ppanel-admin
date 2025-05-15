@@ -1,19 +1,9 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "https://admin.css.sd/$1"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Forwarded-Host",
-          "value": "admin-test.css.sd"
-        }
-      ]
+      "src": "/(.*)",
+      "dest": "https://admin.css.sd/$1",
+      "headers": {"Host": "admin-test.css.sd"}
     }
   ]
 }
