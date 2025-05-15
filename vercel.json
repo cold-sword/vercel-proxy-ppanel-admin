@@ -10,7 +10,7 @@
       "source": "/(.*)",
       "headers": [
         {
-          "key": "X-Forwarded-Host",
+          "key": "Host",
           "value": "admin-test.css.sd"
         }
       ]
